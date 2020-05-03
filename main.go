@@ -1,6 +1,5 @@
 package main
 
-//binary tree node
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
@@ -8,7 +7,9 @@ type TreeNode struct {
 }
 
 func main() {
-
+	rootNode := setupTest1()
+	result := deepestLeavesSum(&rootNode)
+	println("Result = ", result)
 }
 
 func deepestLeavesSum(root *TreeNode) int {
